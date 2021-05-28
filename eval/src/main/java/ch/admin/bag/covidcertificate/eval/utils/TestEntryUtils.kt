@@ -20,10 +20,6 @@ fun TestEntry.getFormattedSampleDate(dateTimeFormatter: DateTimeFormatter): Stri
 	return this.sc.toInstant().atZone(ZoneId.systemDefault()).format(dateTimeFormatter)
 }
 
-fun TestEntry.getFormattedResultDate(dateTimeFormatter: DateTimeFormatter): String {
-	return this.dr.toInstant().atZone(ZoneId.systemDefault()).format(dateTimeFormatter)
-}
-
 fun TestEntry.getTestCenter(): String? {
 	if (!TextUtils.isEmpty(this.tc)) {
 		return this.tc

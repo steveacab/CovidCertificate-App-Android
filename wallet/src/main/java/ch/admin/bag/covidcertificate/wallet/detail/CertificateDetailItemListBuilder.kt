@@ -157,12 +157,6 @@ class CertificateDetailItemListBuilder(val context: Context, val certificate: Ba
 					testEntry.getFormattedSampleDate(DEFAULT_DISPLAY_DATE_TIME_FORMATTER)
 				)
 			)
-			detailItems.add(
-				ValueItem(
-					R.string.wallet_certificate_test_result_date_title,
-					testEntry.getFormattedResultDate(DEFAULT_DISPLAY_DATE_TIME_FORMATTER)
-				)
-			)
 			testEntry.getTestCenter()?.let { testCenter ->
 				detailItems.add(ValueItem(R.string.wallet_certificate_test_done_by, testCenter))
 			}
